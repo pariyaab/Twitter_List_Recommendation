@@ -70,9 +70,11 @@ After finding the similarities, we calculate the following metrics:
 | 100  | 0.04      | 0.87   |
 | 500  | 0.09      | 0.98   |
 
-We also calculate another metric, which is called MPR (Mean Percentile Rank). This is calculated as follows:
-* **MPR:** Mean percentile ranking (MPR) is a metric commonly used to evaluate the performance of top-K recommendation algorithms. It measures the average position of a test item in the ranked list of recommended items. Specifically, for each test item, its percentile ranking is calculated as the position of the item in the ranked list divided by the total number of items, and then multiplied by 100 to get a percentage. The MPR is then calculated as the average of these percentile rankings across all test items and all users. A lower MPR value indicates better performance, as it means that the test items are ranked higher in the recommendation list.
+We also calculate another metric, which is called MPR (Mean Percentile Rank).
 
+* **MPR:** Mean percentile ranking (MPR) is a metric commonly used to evaluate the performance of top-K recommendation algorithms. It measures the average position of a test item in the ranked list of recommended items. Specifically, for each test item, its percentile ranking is calculated as the position of the item in the ranked list divided by the total number of items, and then multiplied by 100 to get a percentage. The MPR is then calculated as the average of these percentile rankings across all test items and all users. A lower MPR value indicates better performance, as it means that the test items are ranked higher in the recommendation list. 
+  
+This is calculated as follows:
 1. Order all of the similarities.
 2. Find the position of the test list and divide it by the total number of lists.
 3. Sum all of the divided values and divide by the number of users.
